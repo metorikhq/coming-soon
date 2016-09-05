@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metorik</title>
+
+	<!-- Facebook meta tags -->
+	<meta property="fb:app_id"             content="725498940921796" />
+	<meta property="og:url"                content="https://metorik.com" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="Metorik - Insightful Analytics for WooCommerce" />
+	<meta property="og:description"        content="I've spent the last few years working on thousands of WooCommerce stores. Big or small, they all had the same problem. A lack of actionable analytics. I want to fix that." />
+	<meta property="og:image"              content="https://metorik.com/assets/facebook.png" />
+	<meta property="og:site_name"		   content="Metorik"/>
+
+	<!-- Twitter meta tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@MetorikHQ">
+	<meta name="twitter:creator" content="@bryceadams">
+	<meta name="twitter:title" content="Metorik - Insightful Analytics for WooCommerce">
+	<meta name="twitter:description" content="I've spent the last few years working on thousands of WooCommerce stores. Big or small, they all had the same problem. A lack of actionable analytics. I want to fix that.">
+	<meta name="twitter:image" content="https://metorik.com/assets/twitter.png">
+
+	<link rel="stylesheet" type="text/css" href="assets/grid.css" />
+	<link rel="stylesheet" type="text/css" href="assets/styles.css" />
+
+	<style type="text/css">
+		@media (max-width: 992px) {
+			.features-list {
+				margin-top: 50px;
+			}
+			.proverb {
+				margin-top: 25px;
+				text-align: left;
+			}
+		}
+
+		@media (max-width: 850px) {
+			.container {
+				width: 85%;
+			}
+			.lead h2 {
+				display: block;
+			}
+			.features-list {
+				font-size: 18px;
+			}
+		}
+	</style>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1099909263434856');
+		fbq('track', "PageView");</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=1099909263434856&ev=PageView&noscript=1"
+		/></noscript>
+	<!-- End Facebook Pixel Code -->
+</head>
+<body>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-82872739-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<script>window.twttr = (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0],
+		t = window.twttr || {};
+	  if (d.getElementById(id)) return t;
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = "https://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+	 
+	  t._e = [];
+	  t.ready = function(f) {
+		t._e.push(f);
+	  };
+	 
+	  return t;
+	}(document, "script", "twitter-wjs"));</script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=725498940921796";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div id="particles"></div>
+	<div id="app" v-cloak>
+		<img src="assets/logo.png" class="logo" alt="Metorik" data-rjs="3">
+		<div class="lead">
+			<h2>Insightful analytics for </h2><img src="assets/woocommerce.png" class="wc-logo" alt="WooCommerce" data-rjs="3" />
+			<div class="break"></div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-12 col-xs-12">
+
+					<p>I've spent the last few years working on thousands of WooCommerce stores. Big or small, they all had the same problem. <strong>A lack of actionable analytics.</strong></p>
+					<p class="fix">I want to fix that.</p>
+					<p>Over the next couple months I'll be building <span class="metorik">Metorik</span>, an all-in-one analytics tool built just for WooCommerce.</p>
+					<p>A single dashboard unifying your store's orders, customers &amp; more. Insight into your store's health through its KPIs. Powerful search, filtering, and exporting. Periodic reports. Beautiful, interactive charts. And this is all just to begin with.</p>
+					<p><strong>Want to know more and be a beta user? Me too!</strong></p>
+
+					<div id="mc_embed_signup">
+						<form method="post" v-if="! success" v-on:submit="emailSignup" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" :class="loading ? 'disabled' : ''" target="_blank" novalidate>
+							<div class="email">
+								<input type="email" placeholder="jarvis@gmail.com" name="EMAIL" class="email" id="mce-EMAIL" v-model="form.email" :disabled="loading" required="required">
+							</div>
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_08245b7de774728865eaca274_5d2bffb74e" tabindex="-1" value=""><input type="submit" name="subscribe" /></div>
+							<div name="subscribe" id="mc-embedded-subscribe" :class="'button ' + (loading ? 'disabled' : '')" v-on:click="emailSignup">Keep me updated</div>
+							<div class="loader"></div>
+						</form>
+						<div v-if="success" :class="'result ' + success">
+							{{ message }}
+							<a href="#" v-on:click="tryAgain" class="try-again" v-if="success !== 'success'">Try again?</a>
+						</div>
+					</div>
+
+					<div class="with-love">
+						Join me on this journey,
+						<a href="https://twitter.com/bryceadams" target="_blank">
+							<img src="assets/bryce.jpg" data-rjs="3" /> Bryce 
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<ul class="features-list">
+						<li><div class="check"></div> Growth rates</li>
+						<li><div class="check"></div> Customer profiles</li>
+						<li><div class="check"></div> Product insights</li>
+						<li><div class="check"></div> Interactive charts</li>
+						<li><div class="check"></div> Filtered exporting</li>
+						<li><div class="check"></div> Automated reports</li>
+						<li><div class="check"></div> Real-time analytics</li>
+						<li><div class="check"></div> Live KPI calculations</li>
+						<li><div class="check"></div> Blazing fast (really)</li>
+						<li><div class="check"></div> Team members</li>
+					</ul>
+
+					<a href="#" v-on:click="tweetShare" class="twitter-share">
+						<svg viewBox="322 355 335 276" xmlns="http://www.w3.org/2000/svg" class="twitter">
+							  <path d="
+								M 630, 425
+								A 195, 195 0 0 1 331, 600
+								A 142, 142 0 0 0 428, 570
+								A  70,  70 0 0 1 370, 523
+								A  70,  70 0 0 0 401, 521
+								A  70,  70 0 0 1 344, 455
+								A  70,  70 0 0 0 372, 460
+								A  70,  70 0 0 1 354, 370
+								A 195, 195 0 0 0 495, 442
+								A  67,  67 0 0 1 611, 380
+								A 117, 117 0 0 0 654, 363
+								A  65,  65 0 0 1 623, 401
+								A 117, 117 0 0 0 662, 390
+								A  65,  65 0 0 1 630, 425
+								Z"/>
+							</svg>
+							Share Metorik!
+					</a>
+
+					<div class='chart-wrapper hidden-xs hidden-sm'>
+						<div class='chart'>
+							<svg viewbox='0 0 560 260'>
+								<defs>
+									<filter id='dropshadow'>
+										<feGaussianBlur in='SourceAlpha' stdDeviation='3'></feGaussianBlur>
+										<feOffset dx='0' dy='0' result='offsetblur'></feOffset>
+										<feComponentTransfer>
+											<feFuncA slope='0.2' type='linear'></feFuncA>
+										</feComponentTransfer>
+										<feMerge>
+											<feMergeNode></feMergeNode>
+											<feMergeNode in='SourceGraphic'></feMergeNode>
+										</feMerge>
+									</filter>
+								</defs>
+								<g class='datasets'>
+									<path class='dataset' d='M0,260 C0,260 4,252 7,252 C66,252 90,102 139,102 C188,102 205,135 252,135 C299,135 309,89 330,89 C350,89 366,122 404,122 C442,122 431,98 451,98 C470,98 499,213 560,260 L0,259 Z' id='dataset-3'></path>
+									<path class='dataset' d='M0,260 C35,254 63,124 88,124 C114,124 148,163 219,163 C290,163 315,100 359,100 C402,100 520,244 560,259 C560,259 0,259 0,260 Z' id='dataset-2'></path>
+									<path class='dataset' d='M0,260 C0,260 22,199 64,199 C105,199 112,144 154,144 C195,144 194,126 216,126 C237,126 263,184 314,184 C365,183 386,128 434,129 C483,130 511,240 560,260 L0,260 Z' id='dataset-1'></path>
+								</g>
+							</svg>
+						</div>
+					</div>
+
+					<div class="social">
+						<a class="twitter-follow-button" href="https://twitter.com/MetorikHQ" data-show-count="false" data-size="large">Follow @MetorikHQ</a>
+						<div class="fb-like" data-href="https://facebook.com/MetorikHQ" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footer">
+				<div class="col-md-6">
+					<p>WooCommerce is a registered trademark of Automattic.</p>
+					<p>Metorik is not associated with Automattic.</p>
+				</div>
+				<div class="col-md-6">
+					<div class="proverb">
+						<h3 class="english">There are hardships and there are delights</h3>
+						<h3 class="japanese">苦あれば楽あり</h3>
+						<h4>Japanese proverb</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://npmcdn.com/vue@2.0.0-rc.3/dist/vue.min.js"></script>
+	<script src="assets/vue-resource.js"></script>
+	<script src="assets/particles.min.js"></script>
+	<script src="assets/retina.min.js"></script>
+	<script src="assets/scripts.js"></script>
+</body>
+</html>
