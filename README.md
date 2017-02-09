@@ -4,6 +4,8 @@
 
 With little work you can easily repurpose this for your own app's coming soon or landing page.
 
+**Important note:** There is a tag in the HTML head to stop indexing by search engines. You'll likely need to remove this before publishing.
+
 [![Screenshot](screenshot.png?raw=true)](https://metorik.com)
 
 It's very fast and could be even faster but I love [Vue.js](https://vuejs.org) so I wanted to use it to handle email signups & sharing.
